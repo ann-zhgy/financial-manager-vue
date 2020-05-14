@@ -1,0 +1,33 @@
+.custom-container {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 1000px;
+  z-index: -10;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+}
+
+.home-content-position {
+  margin-top: 55px;
+}
+
+.clear-fix:before, .clear-fix:after {
+  content:"";
+  display:table;
+}
+.clear-fix:after {
+  clear:both;
+  overflow:hidden;
+}
+.clear-fix{
+  *zoom:1;
+}
