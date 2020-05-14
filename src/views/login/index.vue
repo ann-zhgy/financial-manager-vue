@@ -27,8 +27,9 @@
                  @click.native.prevent="handleLogin">Login
       </el-button>
       <div style="float: right; color: blue; margin-top: -20px">
-<!--        <router-link class="to-login" to="/forget/password">&lt;!&ndash; TODO &ndash;&gt;忘记密码</router-link>-->
-<!--        <span > | </span>-->
+        <!-- 因为某些原因，邮箱和手机无法验证，所以，暂不提供找回密码功能 -->
+        <!--<router-link class="to-login" to="/forget/password">忘记密码</router-link>
+        <span > | </span>-->
         <router-link class="to-login" to="/register">立即注册</router-link>
       </div>
     </el-form>
