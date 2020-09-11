@@ -160,7 +160,13 @@
         }
       },
       changeUpload(file) {
+        const isImage = /^image\/\s*/;
         const isLt5M = file.size / 1024 / 1024 < 5;
+        if (!isImage.test(file.raw.type)) {
+          this.$message.error('文件类型不支持');
+          console.log("文件类型为：" + file.raw.type);
+          return false
+        }
         if (!isLt5M) {
           this.$message.error('上传文件大小不能超过 5MB!');
           return false
